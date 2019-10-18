@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
+[![Build Status](https://travis-ci.org/josecolella/node-api-starter-template.svg?branch=master)](https://travis-ci.org/josecolella/node-api-starter-template)
 
 ## Introduction
 
@@ -13,7 +13,7 @@ The idea of this project is to bring a batteries included project that is not to
 
 The initial template shows an example with a basic CRUD application using sequelize-typecript. Since the structure of the project is split up into features, you can delete the **todo** folder inside api and remove the *todoModule* from inversify.config.ts, so it is no longer part of the application.
 
-The repository tries to follow the [best practices](https://github.com/goldbergyoni/nodebestpractices)for structuring a repository. 
+The repository tries to follow the [best practices](https://github.com/goldbergyoni/nodebestpractices) for structuring a repository. 
 
 
 ## What this repository does not have
@@ -28,11 +28,17 @@ The repository tries to follow the [best practices](https://github.com/goldbergy
 ## Getting Started
 
 
-> git clone https://github.com/josecolella/node-api-starter-template.git
+```
+git clone https://github.com/josecolella/node-api-starter-template.git
+```
 
-> cd node-api-starter-template
+```
+cd node-api-starter-template
+```
 
-> npm install
+```
+npm install
+```
 
 - Create a .env file with the following properties, but remember to change it to the appropriate values.
 
@@ -49,21 +55,29 @@ DB_DIALECT=somedatabasedialect
 ```
 
 - Builds and watches for any change in the application
-> npm run watch
+
+```
+npm run watch
+```
 
 - Executes the application in development mode
-> npm run start:dev
+
+```
+npm run start:dev
+```
 
 * For testing use
 
-> npm test
+```
+npm test
+```
 
 The repository contains an example with two controllers; TodoController and HealthController with corresponding tests to show how to use jest, jest-express to test [inversify-express-utils](https://github.com/inversify/inversify-express-utils)
 
 
 ## Contact
 
-If you have any issues, please contact [José Miguel Colella](jose.colella@dynatrace.com)
+If you have any issues, please contact [José Miguel Colella](https://github.com/josecolella)
 
 
 ## License
