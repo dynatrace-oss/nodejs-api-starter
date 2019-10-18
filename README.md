@@ -19,6 +19,10 @@ The repository tries to follow the [best practices](https://github.com/goldbergy
 ## What this repository does not have
 
 * Authentication: The passport and passport-strategy should be left up to the user
+  
+* Session Management: This is up to the user, even though connect-redis is installed
+
+* Logger: Besides logging of the API results, logging is up to the user
 
 
 ## Getting Started
