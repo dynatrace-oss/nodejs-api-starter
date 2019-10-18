@@ -1,0 +1,15 @@
+# Dependency folder
+node_modules
+
+# JUnits reporter
+*.xml
+
+# log directory
+logs/
+logs
+
+# Environmental file
+.env
+
+# coverage directory
+coverage
