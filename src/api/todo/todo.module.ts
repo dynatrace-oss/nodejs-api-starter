@@ -24,9 +24,7 @@ export const todoModule = (): ContainerModule => {
     (bind: interfaces.Bind, unbind: interfaces.Unbind, isBound: interfaces.IsBound, rebind: interfaces.Rebind) => {
       bind<TodoRepository>(TODO_REPOSITORY).toConstantValue(Todo);
       /* Services */
-      bind<TodoService>(TODO_SERVICE)
-        .to(ApiTodoService)
-        .inSingletonScope();
+      bind<TodoService>(TODO_SERVICE).to(ApiTodoService).inSingletonScope();
     },
   );
 };

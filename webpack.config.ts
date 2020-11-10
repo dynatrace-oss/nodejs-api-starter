@@ -1,6 +1,5 @@
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import path from 'path';
-import TerserPlugin from 'terser-webpack-plugin';
 import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin';
 import webpack from 'webpack';
 import nodeExternals from 'webpack-node-externals';
@@ -26,7 +25,7 @@ const config: webpack.Configuration = {
           },
         ],
       },
-      { test: /\.tsx?$/, loader: ['ts-loader'] },
+      { test: /\.tsx?$/, loader: 'ts-loader' },
     ],
   },
   output: {
@@ -42,16 +41,6 @@ const config: webpack.Configuration = {
     plugins: [new TsconfigPathsPlugin({ configFile: './tsconfig.json' })],
   },
   target: 'node',
-  optimization: {
-    minimizer: [
-      new TerserPlugin({
-        include: /\.ts($|\?)/i,
-        exclude: /\.controller\.ts/i,
-        parallel: true,
-        sourceMap: true,
-      }),
-    ],
-  },
 };
 
 export default config;
