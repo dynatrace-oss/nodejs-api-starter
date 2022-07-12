@@ -60,7 +60,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "helmet": "^4.2.0",
+    "helmet": "^4.6.0",
     "http-status-codes": "^2.1.4",
     "inversify": "^5.0.1",
     "inversify-express-utils": "^6.3.2",
