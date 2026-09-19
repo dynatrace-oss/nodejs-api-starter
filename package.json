@@ -65,7 +65,7 @@
     "inversify": "^5.0.1",
     "inversify-express-utils": "^6.3.2",
     "morgan": "^1.9.1",
-    "mysql2": "^2.2.5",
+    "mysql2": "^2.3.3",
     "reflect-metadata": "^0.1.13",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.7",
